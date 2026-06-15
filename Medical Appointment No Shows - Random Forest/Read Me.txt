@@ -1,0 +1,57 @@
+MEDICAL APPOINTMENT NO‑SHOWS MINI PROJECT
+
+PROJECT OVERVIEW
+This project uses the Medical Appointment No‑Shows dataset from Kaggle to predict whether a patient will attend or miss their scheduled medical appointment. The goal is to build and compare tree‑based machine learning models, including Decision Tree and Random Forest classifiers.
+
+DATASET INFORMATION
+Source: Kaggle
+Dataset: Medical Appointment No‑Shows
+Target variable: No-show (Yes or No)
+
+FEATURES USED
+Gender
+Age
+Scholarship
+Hipertension
+Diabetes
+Alcoholism
+Handcap
+SMS_received
+Target: No-show
+
+PREPROCESSING
+Rows with missing values were removed.
+Age was scaled using StandardScaler.
+Categorical features were one‑hot encoded.
+A ColumnTransformer and Pipeline were used to ensure consistent preprocessing.
+
+DATA SPLITTING
+The dataset was split into:
+80 percent training
+10 percent validation
+10 percent test
+Stratified splitting was used to preserve class balance.
+
+DECISION TREE CLASSIFIER
+A Decision Tree model was trained using different criteria: gini, entropy, and log_loss.
+Each model was evaluated on the validation set.
+The criterion with the highest validation accuracy was selected.
+The final Decision Tree model was evaluated on the test set using accuracy and a confusion matrix.
+
+RANDOM FOREST CLASSIFIER
+A Random Forest model was trained using different numbers of estimators: 10, 50, 100, and 200.
+Each model was evaluated on the validation set.
+The number of estimators with the highest validation accuracy was selected.
+The final Random Forest model was evaluated on the test set using accuracy and a confusion matrix.
+
+RESULTS SUMMARY
+The project outputs include:
+Validation accuracy for each Decision Tree criterion
+Final Decision Tree test accuracy
+Decision Tree confusion matrix
+Validation accuracy for each Random Forest estimator count
+Final Random Forest test accuracy
+Random Forest confusion matrix
+
+CONCLUSION
+This project demonstrates how tree‑based machine learning models can be used to predict medical appointment attendance. It covers data cleaning, feature extraction, preprocessing, model training, hyperparameter tuning, and evaluation. Random Forest generally performs better than a single Decision Tree due to the ensemble effect, but results depend on the dataset. This project provides practical experience with real healthcare data and supervised classification techniques.

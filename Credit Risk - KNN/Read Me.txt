@@ -1,0 +1,65 @@
+CREDIT RISK MINI PROJECT
+
+KNN Classification on German Credit Dataset
+
+PROJECT OVERVIEW
+
+This project uses the German Credit dataset from OpenML to build a machine learning model that predicts whether a loan applicant is a good or bad credit risk. The goal is to practice data preprocessing, feature selection, model training, hyperparameter tuning, and evaluation using the K-Nearest Neighbors (KNN) classifier. This project follows a complete machine learning workflow from loading the data to evaluating the final model.
+
+DATASET INFORMATION
+
+Source: OpenML
+Dataset ID: 31
+Number of rows: 1000
+Number of features: 20
+Target variable: class (good or bad credit risk)
+
+PROJECT STEPS
+
+The project includes the following steps:
+
+Loading the dataset directly from OpenML using scikit-learn.
+Converting the dataset into a Pandas DataFrame.
+Checking for missing values and dropping any rows that contain NaN values.
+Selecting relevant features for the model, including at least four numeric features and at least three categorical features.
+Preprocessing the data by scaling numeric features and one-hot encoding categorical features.
+Splitting the dataset into training, validation, and test sets using an 80-10-10 split.
+Training a KNN classifier using multiple values of k.
+Evaluating each k on the validation set to find the best value.
+Training the final model using the best k.
+Evaluating the final model on the test set using accuracy and a confusion matrix.
+
+FEATURES USED
+
+Numeric features: duration, credit_amount, installment_commitment, age
+Categorical features: checking_status, credit_history, purpose
+Target variable: class
+
+TECHNOLOGIES AND LIBRARIES
+
+Python
+Pandas
+NumPy
+Scikit-learn
+StandardScaler
+OneHotEncoder
+KNeighborsClassifier
+Train-test split
+Accuracy score
+Confusion matrix
+
+MODEL TRAINING SUMMARY
+
+The KNN classifier was trained using a range of k values.
+The best k was selected based on validation accuracy.
+The final model was trained on the training set and evaluated on the test set.
+The evaluation included the final accuracy score and the confusion matrix.
+
+OUTPUTS
+
+Validation accuracy for each tested k value
+Best k value
+Final test accuracy
+Confusion matrix for the final model
+
+CONCLUSION

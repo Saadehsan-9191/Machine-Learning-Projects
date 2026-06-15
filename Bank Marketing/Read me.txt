@@ -1,0 +1,83 @@
+Bank Marketing Classification Project
+Predicting Term Deposit Subscription Using Machine Learning
+
+Project Overview
+This project uses the Bank Marketing Dataset from the UCI Machine Learning Repository to build and compare several machine learning classification models. The goal is to predict whether a customer will subscribe to a term deposit after a marketing campaign. This is a real-world business problem used by banks to improve marketing efficiency, reduce costs, and target the right customers.
+
+Dataset Information
+Source: UCI Machine Learning Repository
+Dataset Name: Bank Marketing
+Number of Rows: 45,211
+Number of Features: 17
+Target Variable: y (yes or no, whether the client subscribed to a term deposit)
+
+Feature Categories
+Client attributes: age, job, marital status, education, default, housing loan, personal loan
+Campaign attributes: contact type, month, day, duration, number of contacts
+Historical campaign performance: previous outcome, number of previous contacts
+Economic indicators: employment variation rate, consumer confidence index, etc.
+
+Project Goals
+
+Clean and preprocess the dataset
+
+Perform exploratory data analysis
+
+Encode categorical variables
+
+Handle class imbalance
+
+Train multiple classification models
+
+Compare model performance
+
+Identify the best model
+
+Provide business insights and recommendations
+
+Models Used
+Logistic Regression
+K-Nearest Neighbors
+Support Vector Machine
+Decision Tree Classifier
+Random Forest Classifier
+Naive Bayes Classifier
+
+Evaluation Metrics
+Accuracy
+Precision
+Recall
+F1 Score
+ROC AUC
+Confusion Matrix
+
+Technologies and Libraries
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+Imbalanced-learn (SMOTE)
+Jupyter Notebook
+
+Project Structure
+Bank-Marketing-Classification
+data
+notebooks
+src
+results
+README.txt
+
+How to Run
+
+Download the dataset from UCI
+
+Install required Python libraries
+
+Open the Jupyter notebook
+
+Run all cells to train models and view results
+
+Conclusion
+This project demonstrates how machine learning can support marketing decision-making by predicting customer behavior. By comparing multiple models, we can identify which algorithm performs best and provide insights that help improve campaign targeting and conversion rates.
