@@ -1,0 +1,69 @@
+{
+    "dataset_root": "B:\\METI Dataset\\Pavement cracks from UAV imagery-xchen-1388\\Pavement cracks from UAV imagery-1000",
+    "annotation_format": "YOLO",
+    "class_mapping": {
+        "0": "transverse_crack",
+        "1": "longitudinal_crack",
+        "2": "alligator_crack",
+        "3": "other_crack"
+    },
+    "splits": {
+        "train": {
+            "num_images": 1111,
+            "num_label_files": 1028,
+            "total_objects": 1242,
+            "empty_labels": 0,
+            "missing_labels_count": 83,
+            "class_counts": {
+                "alligator_crack": 304,
+                "longitudinal_crack": 274,
+                "transverse_crack": 255,
+                "other_crack": 409
+            },
+            "class_percentages": {
+                "alligator_crack": 24.48,
+                "longitudinal_crack": 22.06,
+                "transverse_crack": 20.53,
+                "other_crack": 32.93
+            }
+        },
+        "val": {
+            "num_images": 149,
+            "num_label_files": 129,
+            "total_objects": 162,
+            "empty_labels": 0,
+            "missing_labels_count": 20,
+            "class_counts": {
+                "alligator_crack": 51,
+                "longitudinal_crack": 29,
+                "other_crack": 52,
+                "transverse_crack": 30
+            },
+            "class_percentages": {
+                "alligator_crack": 31.48,
+                "longitudinal_crack": 17.9,
+                "other_crack": 32.1,
+                "transverse_crack": 18.52
+            }
+        },
+        "test": {
+            "num_images": 129,
+            "num_label_files": 129,
+            "total_objects": 153,
+            "empty_labels": 0,
+            "missing_labels_count": 0,
+            "class_counts": {
+                "alligator_crack": 35,
+                "longitudinal_crack": 43,
+                "other_crack": 38,
+                "transverse_crack": 37
+            },
+            "class_percentages": {
+                "alligator_crack": 22.88,
+                "longitudinal_crack": 28.1,
+                "other_crack": 24.84,
+                "transverse_crack": 24.18
+            }
+        }
+    }
+}
